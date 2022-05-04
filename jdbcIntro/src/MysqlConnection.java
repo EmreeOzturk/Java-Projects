@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class MysqlConnection {
 
     public static Connection connectToDatabase() {
-        String dbUrl = "jdbc:mysql://localhost:3306/world";
+        String dbUrl = "jdbc:mysql://localhost:3306/world?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey";
         String userName = "root";
         String password = "root";
         Connection connection = null;
